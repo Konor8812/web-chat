@@ -32,8 +32,8 @@ jobs:
 #      with:
 #        context: .
 #        push: true
-#        tags: konor881/demo:latest
+#        tags: konor881/docker-learning-repository:latest
     - name: Build and push Docker image
       run: |
-      docker build -t konor881/imdb-analyzer:latest .
-      docker push konor881/imdb-analyzer:latest
+      docker build -t konor881/docker-learning-repository:latest .
+      docker push konor881/docker-learning-repository:latest
