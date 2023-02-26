@@ -35,5 +35,5 @@ jobs:
 #        tags: konor881/docker-learning-repository:latest
     - name: Build and push Docker image
       run: |
-      docker build -t konor881/docker-learning-repository:latest .
-      docker push konor881/docker-learning-repository:latest
+      "docker build -t konor881/docker-learning-repository:latest ."
+      "docker push konor881/docker-learning-repository:latest"
