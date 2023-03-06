@@ -14,6 +14,7 @@ public class ChatWebSocketTest {
     public void test(){
         var handler = new ChatWebSocketHandler();
         handler.afterConnectionEstablished(mock(WebSocketSession.class));
+        int a =6;
         assertTrue(true);
     }
 }
