@@ -23,8 +23,7 @@ jobs:
         run: mvn -B package --file pom.xml
 
       - name: Lint Code Base
-        uses: github/super-linter/slim@v4
-        env:
-          VALIDATE_ALL_CODEBASE: false
-          DEFAULT_BRANCH: master
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: nikitasavinov/checkstyle-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          tool_name: 'testtool'
